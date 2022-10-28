@@ -28,3 +28,22 @@ function changeSlide() {
 }
 
 setInterval(changeSlide, 4000)
+
+// Summary flip cards 
+/*
+const cards = document.querySelectorAll('.summary-right-box')
+cards.forEach(card => {
+
+  setTimeout(() => {
+    card.addEventListener('mouseenter', () => {
+      card.classList.add('flip-vertical-right')
+      card.classList.remove('flip-vertical-right-normal')
+    }, 500);
+
+  })
+  card.addEventListener('mouseleave', () => {
+    card.classList.remove('flip-vertical-right')
+    card.classList.add('flip-vertical-right-normal')
+  })
+})
+*/
