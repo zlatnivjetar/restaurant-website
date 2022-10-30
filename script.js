@@ -14,36 +14,16 @@ closeNavCanvas.addEventListener('click', () => {
   navLinks.forEach(link => link.classList.add('link-dark'))
 })
 
-// Hero image slider
-const heroImg = document.querySelector('#hero img')
-let activeIndex = 0
+let slideIndex = 0;
+showSlides();
 
-function changeSlide() {
-  let activeImage = `/images/hero${activeIndex}.jpg`
-  heroImg.setAttribute('src', activeImage)
-  activeIndex++
-  if (activeIndex > 2) {
-    activeIndex = 0
+function showSlides() {
+  let slides = document.querySelectorAll("#hero img");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].classList.remove('active');
   }
+  slideIndex++;
+  if (slideIndex === slides.length) { slideIndex = 0 }
+  slides[slideIndex].classList.add('active');
+  setTimeout(showSlides, 4000);
 }
-
-setInterval(changeSlide, 4000)
-
-// Summary flip cards 
-/*
-const cards = document.querySelectorAll('.summary-right-box')
-cards.forEach(card => {
-
-  setTimeout(() => {
-    card.addEventListener('mouseenter', () => {
-      card.classList.add('flip-vertical-right')
-      card.classList.remove('flip-vertical-right-normal')
-    }, 500);
-
-  })
-  card.addEventListener('mouseleave', () => {
-    card.classList.remove('flip-vertical-right')
-    card.classList.add('flip-vertical-right-normal')
-  })
-})
-*/
