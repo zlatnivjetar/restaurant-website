@@ -8,16 +8,16 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous"
     referrerpolicy="no-referrer" />
-  <title>Bootstrap practice</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" defer></script>
+  <title>Restaurant Website</title>
   <script src="script.js" defer></script>
 </head>
 
-<body>
+<body style="scroll-behavior: smooth;">
   <header>
     <nav class="navbar navbar-expand-md bg-warning bg-opacity-50" aria-label="Offcanvas navbar large">
       <div class="container">
@@ -35,10 +35,10 @@
           </div>
           <div class="offcanvas-body justify-content-end">
             <ul class="d-flex gap-4 list-unstyled m-0" style="font-size:20px;">
-              <li class="nav-item"><a href="index.html" class="link-dark text-decoration-none">Home</i></a></li>
-              <li class="nav-item"><a href="foods.html" class="link-dark text-decoration-none">Foods</a></li>
-              <li class="nav-item"><a href="#" class="link-dark text-decoration-none activelink">About</a></li>
-              <li class="nav-item"><a href="contact.html" class="link-dark text-decoration-none">Contact</a></li>
+              <li class="nav-item"><a href="index.html" class="text-decoration-none">Home</i></a></li>
+              <li class="nav-item"><a href="foods.html" class="text-decoration-none">Foods</a></li>
+              <li class="nav-item"><a href="#" class="text-decoration-none activelink">About</a></li>
+              <li class="nav-item"><a href="contact.html" class="text-decoration-none">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -47,12 +47,70 @@
   </header>
 
   <main>
-    <section class="text-center" id="about-hero">
-      <h1 class="fw-normal" style="color: #fff3cc; font-size: 3.2rem; z-index: 1;">About Us</h1>
-    </section>
+    <div class="wrap">
+      <section class="text-center" id="about-hero">
+        <h1 class="fw-normal" style="color: #fff3cc; font-size: 3.2rem; z-index: 1;">About Us</h1>
+      </section>
+
+      <section id="about-info" style="padding-top: 100px;">
+        <div class="headerbox" style="position: absolute; top: 0; z-index: 1; background-image: linear-gradient(180deg, #9e7700a0,transparent);">
+          <h1>Our Story</h1>
+        </div>
+        <div class="bg"></div>
+        <div class="about-grid">
+          <div class="txt">
+            <h2>Humble Beginnings</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque neque incidunt quidem! Cum distinctio atque totam similique officiis
+              iure
+              ratione vero impedit unde neque, porro maiores velit accusamus, id voluptate. Similique sequi iure velit. <br><br> Inventore unde
+              quibusdam
+              maiores? Explicabo reprehenderit incidunt quas quae optio? Quisquam praesentium perferendis ipsam molestias natus?</p>
+          </div>
+          <div class="img">
+            <img
+              src="https://images.unsplash.com/photo-1542320260-f8f651de8c12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+          </div>
+        </div>
+        <div class="about-grid reverse">
+          <div class="img">
+            <img
+              src="https://images.unsplash.com/photo-1529070025127-198972ae01d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+          </div>
+          <div class="txt">
+            <h2>Expanding Vision</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque neque incidunt quidem! Cum distinctio atque totam similique officiis
+              iure
+              ratione vero impedit unde neque, porro maiores velit accusamus, id voluptate. Similique sequi iure velit. <br><br> Inventore unde
+              quibusdam
+              maiores? Explicabo reprehenderit incidunt quas quae optio? Quisquam praesentium perferendis ipsam molestias natus?</p>
+          </div>
+        </div>
+        <div class="about-main">
+          <h2>What's next?</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, esse sapiente quas deserunt provident quod ad corrupti repellendus
+            magnam culpa quo odio asperiores dolorum laboriosam tempora beatae perspiciatis maiores possimus iure?<br><br> Fugit aspernatur porro
+            voluptate
+            sit expedita mollitia nostrum velit nisi dolore quaerat? Nihil pariatur neque maiores quos earum maxime.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-card">
+            <h4>Patience is the Key</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint corrupti iste unde ipsam. Hic, dolores aut error quae quo magni?</p>
+            <button>Click Me</button>
+          </div>
+          <div class="about-card">
+            <h4>It's all about people</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aut vero architecto, labore facilis quidem dolore commodi?</p>
+            <button>Click Me</button>
+
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="p-4 flex-column flex-md-row">
+    <button class="footer-top" onclick="scrollToTop()">&#10144;</button>
     <div class=" d-flex align-items-center">
       <a class="navbar-brand m-0" style="font-size: 1.6rem; font-family: 'freehand';">Castle Foods <img src="/images/logo.svg"
           width="40px"
@@ -67,6 +125,12 @@
     </ul>
     <span class="d-block d-md-none text-muted" style="margin: 15px 0 0;">© 2022 Castle Foods, Inc</span>
   </footer>
+  <script>
+    function scrollToTop() {
+      window.scrollTo(0, 0)
+      wrap.scrollTo(0, 0)
+    }
+  </script>
 </body>
 
 </html>
